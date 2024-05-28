@@ -1,0 +1,63 @@
+.box {
+  border: 50px solid red;
+  width: 200px;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+.green {
+  border: 50px solid green;
+  background-color: #9b59b6;
+}
+
+.blue {
+  border: 50px solid blue;
+  background-color: #00bcd4;
+}
+
+.none {
+  display: none;
+} /* 공간까지 없어짐 */
+
+.hidden {
+  visibility: hidden;
+} /* 공간을 유지하면서 보이지만 않음 */
+
+#challenge2-wrap {
+  background-color: #fff;
+  background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+}
+.challenge2 {
+  margin-left: 10%;
+}
+
+h1::before {
+  content: "Topic: ";
+}
+h1 {
+  color: #9b59b6;
+}
+h1:first-child {
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  &::first-letter {
+    font-size: 200%;
+    color: #2980b9;
+  } /* nesting rule 연습 */
+}
+
+p.sub-header {
+  color: #2980b9;
+}
+
+/* p::first-letter {
+  font-size: 200%;
+  color: #2980b9;
+} */
